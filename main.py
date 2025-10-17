@@ -14,6 +14,8 @@ class DiamondGraderApp:
         
         # Edge device configuration
         self.edge_url = "http://RASPBERRY_PI_IP:8001"
+        #self.edge_url = "http://192.168.1.19:8001"
+
         
         # UI Components
         self.upload_button = None
@@ -293,5 +295,6 @@ class DiamondGraderApp:
 
 def main(page: ft.Page):
     app = DiamondGraderApp(page)
+
 
 ft.app(target=main)
